@@ -77,6 +77,8 @@ const totalBalances = normalizeNumber(
 );
 console.log("🚀 ~ file: main.js:66 ~ totalBalances:", totalBalances);
 
-resultEl.insertAdjacentHTML("beforeend", richUsers);
-resultEl.insertAdjacentHTML("beforeend", "<br>");
-resultEl.insertAdjacentHTML("beforeend", totalBalances);
+task += richUsers;
+task += "<br>";
+task += totalBalances;
+
+resultEl.insertAdjacentHTML("beforeend", task);
